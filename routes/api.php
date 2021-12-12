@@ -17,3 +17,6 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::post('stripe/create',[\App\Http\Controllers\CheckoutController::class,'stripePost']);
+Route::get('fill/tyniCart/{session_id}',[\App\Http\Controllers\CartController::class,'apiTyniCart']);

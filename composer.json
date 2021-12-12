@@ -10,9 +10,13 @@
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
         "intervention/image": "^2.7",
+        "laravel/cashier": "^13.6",
         "laravel/framework": "^8.54",
         "laravel/sanctum": "^2.11",
-        "laravel/tinker": "^2.5"
+        "laravel/tinker": "^2.5",
+        "slim/slim": "^3.12",
+        "stripe/stripe-php": "^7.104",
+      "ext-json": "*"
     },
     "require-dev": {
         "facade/ignition": "^2.5",

@@ -15,10 +15,10 @@ class CategoriesSeeder extends Seeder
     public function run()
     {
         $categories = [
-            'Bisuteria',
-            'Joyeria (Plata 925)',
-            'Ropa',
-            'Personalizables'
+            'Aretes/Zarcillos',
+            'Collares',
+            'Pulseras',
+            'Tobilleras'
         ];
 
         foreach ($categories as $cat) {

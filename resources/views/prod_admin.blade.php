@@ -8,19 +8,43 @@
     <title>Document</title>
 </head>
 <body>
-<form action="{{ url('save/product') }}" method="post" enctype="multipart/form-data" >
-    <div class="form-group">
-        <label for="exampleInputFile">File input</label>
-        <input type="file" name="file" id="exampleInputFile" accept="image/*">
-        <br>
-        @error('file')
-        <span class="text-danger">
-            Debe ser una imagen
-        </span>
-        @enderror
+<h1>Laravel Resize Image Tutorial - ItSolutionStuff.com</h1>
+@if (count($errors) > 0)
+    <div class="alert alert-danger">
+        <strong>Whoops!</strong> There were some problems with your input.<br><br>
+        <ul>
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
     </div>
+@endif
+
+
+    <div class="alert alert-success alert-block">
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <strong>Original Image:</strong>
+            <br/>
+            <img src="{{ asset('productos/thumbnail/thumb_4f492ea8-732a-4e26-9966-868f9c050d9c.jpg') }}"/>
+        </div>
+
+    </div>
+
+
+<form action="{{ url('save/product') }}" method="post" enctype="multipart/form-data">
     @csrf
-    <button type="submit" class="btn btn-default">Submit</button>
+    <div class="row">
+        <div class="col-md-12">
+            <br/>
+            <input type="file" name="file" class="image">
+        </div>
+        <div class="col-md-12">
+            <br/>
+            <button type="submit" class="btn btn-success">Upload Image</button>
+        </div>
+    </div>
 </form>
 </body>
 </html>

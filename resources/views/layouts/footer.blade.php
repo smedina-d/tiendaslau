@@ -20,7 +20,7 @@
                             <strong>Flexible de nuestros productos</strong></p>
 
                         <div
-                            style="background: url('images/world-map.png') no-repeat center center; background-size: 100%;">
+                            style="background: url('{{ asset('images/world-map.png') }}') no-repeat center center; background-size: 100%;">
                             <address>
                                 <strong>Dirección:</strong><br>
                                 795 Folsom Ave, Suite 600<br>

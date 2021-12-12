@@ -17,4 +17,8 @@ class Categorie extends Model
         'name',
         'estatus'
     ];
+
+    public function categoria(){
+        return $this->$this->belongsTo(Product::class);
+    }
 }

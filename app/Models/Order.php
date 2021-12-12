@@ -13,6 +13,7 @@ class Order extends Model
     protected $table = 'orders';
     protected $fillable = [
         'user_id',
+        'orders_id',
         'amount',
         'taxes',
         'shipping_fee',
@@ -20,4 +21,5 @@ class Order extends Model
         'total',
         'order_status' //0: Order Placed - 1: Order Payed - 2: Order Process - 3: Order Shipped - 4: Order Completed
     ];
+
 }

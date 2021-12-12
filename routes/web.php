@@ -1,6 +1,10 @@
 <?php
 
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\CartController;
 use App\Http\Controllers\MainController;
+use App\Http\Controllers\CheckoutController;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +17,20 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('info',function (){
+    return phpinfo();
+})->name('home');
+
+Route::get('payment-checkout',[CheckoutController::class,'paymentForm']);
+
+Route::get('/billing-portal', function (Request $request) {
+    return $request->user()->redirectToBillingPortal();
+});
+
+Route::post('stripe', [CheckoutController::class, 'stripePost'])->name('stripe.post');
+
+Route::post('/create-payment',[CheckoutController::class,'pagameMardeto']);
+
 require __DIR__.'/auth.php';
 
 Route::get('/dashboard', function () {
@@ -20,9 +38,24 @@ Route::get('/dashboard', function () {
 })->middleware(['auth'])->name('dashboard');
 
 Route::get('/', [MainController::class,'index']);
+Route::get('/quick-view/{param}',[MainController::class,'quickView']);
 Route::get('/shop/{cat_id}/{prod_id}',[MainController::class, 'showSingleProduct']);
+Route::get('/main/shop/{cat_id?}',[MainController::class,'showAll']);
 
-Route::get('cart',[MainController::class,'cart']);
+Route::get('cart',[CartController::class,'cart']);
+Route::post('save/cart',[CartController::class,'saveCart']);
+Route::get('remove/item/{id}',[CartController::class,'removeItem']);
+Route::get('checkout/{session_id}',[CheckoutController::class,'checkout']);
 
-Route::get('create/products',[MainController::class,'createProducts']);
-Route::post('save/product',[MainController::class,'saveProduct']);
+//Route::get('upload',[MainController::class,'createProducts']);
+//Route::post('save/product',[MainController::class,'saveProduct']);
+
+/**
+ * Admin Section
+ */
+
+Route::get('admin',[AdminController::class,'index'])->middleware('auth');
+Route::get('add/product',[AdminController::class,'create_products'])->middleware('auth');
+Route::post('create/product',[AdminController::class,'saveProduct']);
+
+Route::post('/login-checkout',[CheckoutController::class,'loginOnCheckout']);

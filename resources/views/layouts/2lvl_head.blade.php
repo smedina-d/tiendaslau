@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="{{ asset('css/magnific-popup.css') }}" type="text/css" />
 
     <link rel="stylesheet" href="{{ asset('css/responsive.css') }}" type="text/css" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!--[if lt IE 9]>
     <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
@@ -21,6 +22,6 @@
 
     <!-- Document Title
     ============================================= -->
-    <title>{{ isset($product_slug) ? $product_slug : "An error coccur"  }} | Tiendas Lau</title>
+    <title>Tiendas Lau</title>
 
 </head>

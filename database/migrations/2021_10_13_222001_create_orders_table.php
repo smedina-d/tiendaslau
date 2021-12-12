@@ -15,6 +15,7 @@ class CreateOrdersTable extends Migration
     {
         Schema::create('orders', function (Blueprint $table) {
             $table->uuid('id')->primary();
+            $table->mediumText('orders_id')->nullable();
             $table->uuid('user_id');
             $table->boolean('guest_order')->default(0);
             $table->decimal('amount',15,2)->default(0);

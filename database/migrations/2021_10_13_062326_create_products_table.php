@@ -17,7 +17,7 @@ class CreateProductsTable extends Migration
             $table->uuid('id')->primary();
             $table->uuid('sku');
             $table->longText('name');
-            $table->integer('category')->nullable();
+            $table->uuid('category')->nullable();
             $table->decimal('price', 15, 2)->default(0);
             $table->decimal('taxes', 15, 2)->default(0);
             $table->integer('discount')->default(0);
