@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Classes\SkuGenerator;
 use App\Models\Categorie;
 use App\Models\Imagenes;
+use App\Models\Order;
 use App\Models\Product;
 use App\Models\Sku;
 use Illuminate\Http\Request;
@@ -14,13 +15,22 @@ use Intervention\Image\Facades\Image;
 class AdminController extends Controller
 {
     public function index() {
-        return view('admin.admin');
+        $prod = Product::all();
+        $orders = Order::all();
+        return view('layouts.admin')
+            ->with([
+                'prod' => $prod,
+                'orders'    => $orders
+            ]);
     }
 
     public function create_products()
     {
         $cat = Categorie::all();
-        return view('admin.create_product')->with(['cat' => $cat]);
+        $prod = Product::all();
+        $orders = Order::all();
+        return view('admin.create_product')->with(['cat' => $cat,'prod' => $prod,
+            'orders'    => $orders]);
     }
 
     public function saveProduct(Request $request)
@@ -70,5 +80,13 @@ class AdminController extends Controller
 
         return back()->with(['message' => "Insertado con exito"]);
 
+    }
+
+    public function editProduct() {
+        $cat = Categorie::all();
+        $prod = Product::with('imagenes')->orderBy('sku','asc')->get();
+        $orders = Order::all();
+        return view('admin.editProducts')->with(['cat' => $cat,'prod' => $prod,
+            'orders'    => $orders]);
     }
 }

@@ -57,5 +57,5 @@ Route::get('checkout/{session_id}',[CheckoutController::class,'checkout']);
 Route::get('admin',[AdminController::class,'index'])->middleware('auth');
 Route::get('add/product',[AdminController::class,'create_products'])->middleware('auth');
 Route::post('create/product',[AdminController::class,'saveProduct']);
-
+Route::get('edit/product',[AdminController::class,'editProduct']);
 Route::post('/login-checkout',[CheckoutController::class,'loginOnCheckout']);
