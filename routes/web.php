@@ -58,4 +58,8 @@ Route::get('admin',[AdminController::class,'index'])->middleware('auth');
 Route::get('add/product',[AdminController::class,'create_products'])->middleware('auth');
 Route::post('create/product',[AdminController::class,'saveProduct']);
 Route::get('edit/product',[AdminController::class,'editProduct']);
+Route::get('edit/images/{id}',[AdminController::class,'editImagenes']);
+Route::get('/get-product/{id}',[AdminController::class,'productEndpoint']);
+Route::post('/update-images',[AdminController::class,'updateImages']);
+
 Route::post('/login-checkout',[CheckoutController::class,'loginOnCheckout']);

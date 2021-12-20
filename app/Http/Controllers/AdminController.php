@@ -89,4 +89,46 @@ class AdminController extends Controller
         return view('admin.editProducts')->with(['cat' => $cat,'prod' => $prod,
             'orders'    => $orders]);
     }
+
+    public function editImagenes($prod_id) {
+        $cat = Categorie::all();
+        $prod = Product::with('imagenes')->orderBy('sku','asc')->get();
+        $orders = Order::all();
+        $imagenes = Imagenes::where('product_id',$prod_id)->get();
+        return view('admin.editImagenes')->with(['cat' => $cat,'prod' => $prod,
+            'orders'    => $orders,
+            'imagenes' => $imagenes]);
+    }
+
+    public function productEndpoint($id){
+        $prod = Product::where('id',$id)->first();
+        return Response()->json($prod,202);
+    }
+
+    public function updateImages(Request $request) {
+        $prodId = $request->prod_id;
+        $image = $request->file('file');
+        foreach ($image as $key => $img2) {
+            $input['imagename'] = $prodId.time().'.'.$img2->extension();
+            $input['thumbname'] = 'thumb_'.$prodId.time().'.'.$img2->extension();
+
+            $destinationPath = public_path('/productos/thumbnail');
+            $img = Image::make($img2->path());
+            $img->resize(60, 80, function ($constraint) {
+                $constraint->aspectRatio();
+            })->save($destinationPath.'/'.$input['thumbname']);
+
+            $destinationPath = public_path('/productos');
+            $img2->move($destinationPath, $input['imagename']);
+
+            $salvar = Imagenes::where('id',$request->img_id)->update([
+                'product_id' => $prodId,
+                'image'     => $input['imagename'],
+                'thumb1'    => $input['thumbname'],
+                'location'  => public_path('productos')
+            ]);
+        }
+
+        return back();
+    }
 }

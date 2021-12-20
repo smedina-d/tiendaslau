@@ -161,6 +161,13 @@
                                     {{ Auth::user()->name }}
                                 </div>
                                 <span>Get In Touch</span></a></li>
+                    @if(Auth::user()->id == 1)
+                            <li><a href="{{ url('admin') }}">
+                                    <div>
+                                        Admin
+                                    </div>
+                                    <span>Get In Touch</span></a></li>
+                        @endif
                         <li><a href="#!"
                                onclick="event.preventDefault();
                                                 document.getElementById('salir').submit();">
