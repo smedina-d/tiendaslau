@@ -59,7 +59,7 @@
                                     </div>
                                 </div>
                                 <div class="product-desc center">
-                                    <div class="product-title"><h3><a href="#">{{ $product->name }}</a></h3></div>
+                                    <div class="product-title"><h6><a href="#">{{ $product->name }}</a></h6></div>
                                     <div class="product-price">
                                         @if($product->discount <> 0)
                                             <del>${{ $product->price }}</del>
