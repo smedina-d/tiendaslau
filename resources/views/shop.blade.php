@@ -83,7 +83,7 @@
         <div class="tp-banner-container">
             <div class="tp-banner" >
                 <ul>    <!-- SLIDE  -->
-                    <li data-transition="fade" data-slotamount="1" data-masterspeed="1500" data-delay="10000" data-saveperformance="off" data-title="Latest Collections" style="background-color: #F6F6F6;">
+                    <li data-transition="fade" data-slotamount="1" data-masterspeed="1500" data-delay="10000" data-saveperformance="off" data-title="Latest Collections" style="background-color: #FFFFFF;">
                         <!-- LAYERS -->
 
                         <!-- LAYER NR. 2 -->
@@ -159,7 +159,7 @@
 
                     </li>
                     <!-- SLIDE  -->
-                    <li data-transition="slideup" data-slotamount="1" data-masterspeed="1500" data-delay="10000"  data-saveperformance="off"  data-title="Messenger bags" style="background-color: #E9E8E3;">
+                    <li data-transition="slideup" data-slotamount="1" data-masterspeed="1500" data-delay="10000"  data-saveperformance="off"  data-title="Messenger bags" style="background-color: #FFFFFF;">
                         <!-- LAYERS -->
 
                         <div class="tp-caption customin ltl tp-resizeme revo-slider-caps-text uppercase"
