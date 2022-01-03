@@ -99,7 +99,7 @@
                              data-elementdelay="0.01"
                              data-endelementdelay="0.1"
                              data-endspeed="1000"
-                             data-endeasing="Power4.easeIn" style=""><img src="{{ asset('images/slider/rev/shop/girl1.jpg') }}" alt="Girl"></div>
+                             data-endeasing="Power4.easeIn" style=""><img src="{{ asset('images/slider/rev/shop/añonuevoletras2.png') }}" alt="Girl"></div>
 
                         <div class="tp-caption customin ltl tp-resizeme revo-slider-caps-text uppercase"
                              data-x="570"
@@ -113,7 +113,7 @@
                              data-elementdelay="0.01"
                              data-endelementdelay="0.1"
                              data-endspeed="1000"
-                             data-endeasing="Power4.easeIn" style=" color: #333;">Ten tu bolsa de compras lista</div>
+                             data-endeasing="Power4.easeIn" style=" color: #333;">Feliz año nuevo 2022</div>
 
                         <div class="tp-caption customin ltl tp-resizeme revo-slider-emphasis-text nopadding noborder"
                              data-x="570"
@@ -127,7 +127,7 @@
                              data-elementdelay="0.01"
                              data-endelementdelay="0.1"
                              data-endspeed="1000"
-                             data-endeasing="Power4.easeIn" style=" color: #333; max-width: 430px; line-height: 1.15;">Colección única en <br>Joyeria fina</div>
+                             data-endeasing="Power4.easeIn" style=" color: #333; max-width: 430px; line-height: 1.15;">Ven a ver nuestra nueva <br>colección 2022 en Joyeria fina</div>
 
                         <div class="tp-caption customin ltl tp-resizeme revo-slider-desc-text tleft"
                              data-x="570"
@@ -141,7 +141,7 @@
                              data-elementdelay="0.01"
                              data-endelementdelay="0.1"
                              data-endspeed="1000"
-                             data-endeasing="Power4.easeIn" style=" color: #333; max-width: 550px; white-space: normal;">Tenemos para ti, la última tendencia 2021 en bisuteria, joyeria fina y joyas de plata ley 925.</div>
+                             data-endeasing="Power4.easeIn" style=" color: #333; max-width: 550px; white-space: normal;">Tenemos para ti, la última tendencia 2022 en bisuteria, joyeria fina y joyas de plata ley 925.</div>
 
                         <div class="tp-caption customin ltl tp-resizeme"
                              data-x="570"
@@ -174,7 +174,7 @@
                              data-elementdelay="0.01"
                              data-endelementdelay="0.1"
                              data-endspeed="1000"
-                             data-endeasing="Power4.easeIn" style=""><img src="{{ asset('images/shop/imagenesProductos.png') }}" alt="Bag"></div>
+                             data-endeasing="Power4.easeIn" style=""><img src="{{ asset('images/slider/rev/shop/añonuevoletras1.png') }}" alt="Bag"></div>
 
                         <!-- LAYER NR. 2 -->
                         <div class="tp-caption customin ltl tp-resizeme revo-slider-caps-text uppercase"
