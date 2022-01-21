@@ -37,7 +37,7 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
 
-Route::get('/', [MainController::class,'index']);
+Route::get('/', [MainController::class,'showAll']);
 Route::get('/quick-view/{param}',[MainController::class,'quickView']);
 Route::get('/shop/{cat_id}/{prod_id}',[MainController::class, 'showSingleProduct']);
 Route::get('/main/shop/{cat_id?}',[MainController::class,'showAll']);

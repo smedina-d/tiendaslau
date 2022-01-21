@@ -15,7 +15,7 @@
     <section id="page-title">
 
         <div class="container clearfix">
-            <h1>Completa tu orden {{ Session::getId() }}</h1>
+            <h1>Completa tu orden</h1>
 {{--            <ol class="breadcrumb">--}}
 {{--                <li><a href="#">Home</a></li>--}}
 {{--                <li><a href="#">Shop</a></li>--}}
@@ -185,8 +185,8 @@
                                     </td>
 
                                     <td class="cart-product-name">
-                                        <span class="amount">$120</span>
-                                        <input type="hidden" id="shipping" value="120">
+                                        <span class="amount">$150</span>
+                                        <input type="hidden" id="shipping" value="150">
                                     </td>
                                 </tr>
                                 <tr class="cart_item">
@@ -204,8 +204,8 @@
                         </div>
                         <form action="{{ url('stripe') }}" method="post" enctype="multipart/form-data">
                            @csrf
-                            <input type="text" name="subtotal" id="field_subtotal">
-                            <input type="text" name="amount" id="field_amount">
+                            <input type="hidden" name="subtotal" id="field_subtotal">
+                            <input type="hidden" name="amount" id="field_amount">
                         </form>
                         <a href="{{ url('payment-checkout') }}" class="button button-3d button-small nomargin fright">Pagar</a>
                     </div>

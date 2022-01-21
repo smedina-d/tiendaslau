@@ -92,7 +92,7 @@
                             <h4>Categorias</h4>
                             <ul>
                                 @foreach($categories as $cat)
-                                    <li><a href="#!">{{ $cat->name }}</a></li>
+                                    <li><a href="{{ url('main/shop',$cat->id) }}">{{ $cat->name }}</a></li>
                                 @endforeach
                             </ul>
 

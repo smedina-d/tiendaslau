@@ -82,13 +82,13 @@
 
                                 <!-- Product Single - Rating
                                 ============================================= -->
-                                <div class="product-rating">
-                                    <i class="icon-star3"></i>
-                                    <i class="icon-star3"></i>
-                                    <i class="icon-star3"></i>
-                                    <i class="icon-star-half-full"></i>
-                                    <i class="icon-star-empty"></i>
-                                </div><!-- Product Single - Rating End -->
+{{--                                <div class="product-rating">--}}
+{{--                                    <i class="icon-star3"></i>--}}
+{{--                                    <i class="icon-star3"></i>--}}
+{{--                                    <i class="icon-star3"></i>--}}
+{{--                                    <i class="icon-star-half-full"></i>--}}
+{{--                                    <i class="icon-star-empty"></i>--}}
+{{--                                </div><!-- Product Single - Rating End -->--}}
 
                                 <div class="clear"></div>
                                 <div class="line"></div>
@@ -102,24 +102,23 @@
                                                class="qty" size="4"/>
                                         <input type="button" value="+" class="plus" onclick="$('.qty').val(Number( $('.qty').val() ) + 1).change()">
                                     </div>
-                                    <a href="#!" class="add-to-cart button nomargin" onclick="addToCart()">Agregar</a>
+                                    <a href="#myModal1" data-lightbox="inline" class="add-to-cart button nomargin" onclick="addToCart()">Agregar</a>
                                 </form><!-- Product Single - Quantity & Cart Button End -->
-
                                 <div class="clear"></div>
                                 <div class="line"></div>
 
                                 <!-- Product Single - Short Description
                                 ============================================= -->
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero velit id eaque ex
-                                    quae laboriosam nulla optio doloribus! Perspiciatis, libero, neque, perferendis at
-                                    nisi optio dolor!</p>
-                                <p>Perspiciatis ad eveniet ea quasi debitis quos laborum eum reprehenderit eaque
-                                    explicabo assumenda rem modi.</p>
-                                <ul class="iconlist">
-                                    <li><i class="icon-caret-right"></i> Dynamic Color Options</li>
-                                    <li><i class="icon-caret-right"></i> Lots of Size Options</li>
-                                    <li><i class="icon-caret-right"></i> 30-Day Return Policy</li>
-                                </ul><!-- Product Single - Short Description End -->
+{{--                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero velit id eaque ex--}}
+{{--                                    quae laboriosam nulla optio doloribus! Perspiciatis, libero, neque, perferendis at--}}
+{{--                                    nisi optio dolor!</p>--}}
+{{--                                <p>Perspiciatis ad eveniet ea quasi debitis quos laborum eum reprehenderit eaque--}}
+{{--                                    explicabo assumenda rem modi.</p>--}}
+{{--                                <ul class="iconlist">--}}
+{{--                                    <li><i class="icon-caret-right"></i> Dynamic Color Options</li>--}}
+{{--                                    <li><i class="icon-caret-right"></i> Lots of Size Options</li>--}}
+{{--                                    <li><i class="icon-caret-right"></i> 30-Day Return Policy</li>--}}
+{{--                                </ul><!-- Product Single - Short Description End -->--}}
 
                                 <!-- Product Single - Meta
                                 ============================================= -->
@@ -499,7 +498,7 @@
                                                 <div class="sale-flash">Sale!</div>
                                             @endif
                                         <div class="product-overlay">
-                                            <a href="#!" class="add-to-cart"><i class="icon-shopping-cart"></i><span> Agregar</span></a>
+                                            <a href="#!" class="add-to-cart" data-toggle="modal" data-target="#exampleModal"><i class="icon-shopping-cart"></i><span> Agregar</span></a>
                                             <a href="{{ url('quick-view',$rel->id) }}" class="item-quick-view"
                                                data-lightbox="ajax"><i
                                                     class="icon-zoom-in2"></i><span> Vista rápida</span></a>
@@ -574,7 +573,19 @@
 <!-- Go To Top
 ============================================= -->
 <div id="gotoTop" class="icon-angle-up"></div>
-
+<!-- Modal -->
+<!-- Modal -->
+<div class="modal1 mfp-hide" id="myModal1">
+    <div class="block divcenter" style="background-color: #FFF; max-width: 500px;">
+        <div class="center" style="padding-top: 20px;">
+            <h3>Producto agregado con éxito</h3>
+        </div>
+        <div class="section center nomargin" style="padding: 0px 0px 20px 0px !important;">
+            <a href="#" class="button" onClick="$.magnificPopup.close();location.reload();return false;">Cerrar</a>
+            <a href="{{ url('main/shop') }}" class="button" style="background-color: orange !important;" onClick="$.magnificPopup.close();return false;">Seguir Comprando</a>
+        </div>
+    </div>
+</div>
 <!-- External JavaScripts
 ============================================= -->
 <script type="text/javascript" src="{{ asset('js/jquery.js') }}"></script>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Tiendas Lay Stripe Checkout</title>
+    <title>Tiendas Lau Stripe Checkout</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <style type="text/css">
@@ -155,11 +155,11 @@
                         <div class="col-sm-5 text-sm-center justify-content-center pt-4 pb-4"> <small class="text-sm text-muted">Número de orden</small>
                             <h5 class="mb-5">TL-2021-0010</h5> <small class="text-sm text-muted">Monto a pagar</small>
                             <div class="row px-3 justify-content-sm-center">
-                                <input type="hidden" name="amount_vl" value="{{ $amount }}">
+                                <input type="hidden" name="amount_vl" value="{{ $amount + 150 }}">
                                 @foreach($skus as $key => $sku)
                                     <input type="hidden" name="compra[]" value="{{ $sku }}">
                                 @endforeach
-                                <h2 class=""><span class="text-md font-weight-bold mr-2">$</span><span class="text-danger">{{ $amount }}</span></h2>
+                                <h2 class=""><span class="text-md font-weight-bold mr-2">$</span><span class="text-danger">{{ $amount + 150 }}</span></h2>
                             </div> <button type="submit" class="btn btn-red text-center mt-4">Pagar</button>
                         </div>
                     </div>

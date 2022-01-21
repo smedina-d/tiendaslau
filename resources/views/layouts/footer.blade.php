@@ -23,11 +23,11 @@
                             style="background: url('{{ asset('images/world-map.png') }}') no-repeat center center; background-size: 100%;">
                             <address>
                                 <strong>Dirección:</strong><br>
-                                795 Folsom Ave, Suite 600<br>
-                                San Francisco, CA 94107<br>
+                                Av Calimaya, Fuente de la Barcaza 7B<br>
+                                Estado de Mexico, MX 52220<br>
                             </address>
                             <abbr title="Phone Number"><strong>Teléf:</strong></abbr> (52) 722 173 0403<br>
-                            <abbr title="Email Address"><strong>Correo:</strong></abbr> laurecastillo26@gmail.com
+                            <abbr title="Email Address"><strong>Correo:</strong></abbr> tiendaslaumx@gmail.com
                         </div>
 
                     </div>
@@ -41,11 +41,8 @@
                         <h4>Menú</h4>
 
                         <ul>
-                            <li><a href="http://codex.wordpress.org/">Inicio</a></li>
-                            <li><a href="http://wordpress.org/support/forum/requests-and-feedback">Joyeria</a></li>
-                            <li><a href="http://wordpress.org/extend/plugins/">Ropa</a></li>
-                            <li><a href="http://wordpress.org/support/">Personalizalo</a></li>
-                            <li><a href="http://wordpress.org/extend/themes/">Contactanos</a></li>
+                            <li><a href="{{ url('/') }}">Inicio</a></li>
+                            <li><a href="{{ url('main/shop') }}">Joyeria</a></li>
                         </ul>
 
                     </div>
@@ -100,21 +97,21 @@
 
                 </div>
 
-                <div class="widget subscribe-widget clearfix">
-                    <h5><strong>Susscribete</strong> a nuestra oertas, te llegara un mensaje de WhatsApp Semanal con un link personalizado:</h5>
-                    <div class="widget-subscribe-form-result"></div>
-                    <form id="widget-subscribe-form" action="include/subscribe.php" role="form" method="post"
-                          class="nobottommargin">
-                        <div class="input-group divcenter">
-                            <span class="input-group-addon"><i class="icon-email2"></i></span>
-                            <input type="email" id="widget-subscribe-form-email" name="widget-subscribe-form-email"
-                                   class="form-control required email" placeholder="00584123165987">
-                            <span class="input-group-btn">
-										<button class="btn btn-success" type="submit">Suscribete</button>
-									</span>
-                        </div>
-                    </form>
-                </div>
+{{--                <div class="widget subscribe-widget clearfix">--}}
+{{--                    <h5><strong>Susscribete</strong> a nuestra oertas, te llegara un mensaje de WhatsApp Semanal con un link personalizado:</h5>--}}
+{{--                    <div class="widget-subscribe-form-result"></div>--}}
+{{--                    <form id="widget-subscribe-form" action="include/subscribe.php" role="form" method="post"--}}
+{{--                          class="nobottommargin">--}}
+{{--                        <div class="input-group divcenter">--}}
+{{--                            <span class="input-group-addon"><i class="icon-email2"></i></span>--}}
+{{--                            <input type="email" id="widget-subscribe-form-email" name="widget-subscribe-form-email"--}}
+{{--                                   class="form-control required email" placeholder="00584123165987">--}}
+{{--                            <span class="input-group-btn">--}}
+{{--										<button class="btn btn-success" type="submit">Suscribete</button>--}}
+{{--									</span>--}}
+{{--                        </div>--}}
+{{--                    </form>--}}
+{{--                </div>--}}
 
                 <div class="widget clearfix" style="margin-bottom: -20px;">
 

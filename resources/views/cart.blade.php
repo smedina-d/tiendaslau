@@ -17,11 +17,6 @@
 
         <div class="container clearfix">
             <h1>Carrito de compras</h1>
-            <ol class="breadcrumb">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Shop</a></li>
-                <li class="active">Cart</li>
-            </ol>
         </div>
 
     </section><!-- #page-title end -->
@@ -89,32 +84,29 @@
 
                 <div class="row clearfix">
                     <div class="col-md-6 clearfix">
-                        <h4>Calculate Shipping</h4>
+                        <h4>Calcular envio Shipping</h4>
                         <form>
-                            <div class="col_full">
-                                <select class="sm-form-control">
-                                    <option value="MX">Mexico</option>
-                                    <option value="AW">Aruba</option>
-                                    <option value="BT">Bhutan</option>
-                                    <option value="BO">Bolivia</option>
-                                    <option value="BR">Brazil</option>
-                                    <option value="CL">Chile</option>
-                                    <option value="CN">China</option>
-                                    <option value="CO">Colombia</option>
-                                    <option value="CR">Costa Rica</option>
-                                    <option value="EC">Ecuador</option>
-                                    <option value="VE">Venezuela</option>
+{{--                            <div class="col_full">--}}
+{{--                                <select class="sm-form-control">--}}
+{{--                                    <option value="MX">Mexico</option>--}}
+{{--                                    <option value="AW">Aruba</option>--}}
+{{--                                    <option value="BT">Bhutan</option>--}}
+{{--                                    <option value="BO">Bolivia</option>--}}
+{{--                                    <option value="BR">Brazil</option>--}}
+{{--                                    <option value="CL">Chile</option>--}}
+{{--                                    <option value="CN">China</option>--}}
+{{--                                    <option value="CO">Colombia</option>--}}
+{{--                                    <option value="CR">Costa Rica</option>--}}
+{{--                                    <option value="EC">Ecuador</option>--}}
+{{--                                    <option value="VE">Venezuela</option>--}}
 
-                                </select>
-                            </div>
+{{--                                </select>--}}
+{{--                            </div>--}}
                             <div class="col_half">
-                                <input type="text" class="sm-form-control" placeholder="State / Country" />
+                                <input type="text" class="sm-form-control" placeholder="Código postal destino" />
                             </div>
 
-                            <div class="col_half col_last">
-                                <input type="text" class="sm-form-control" placeholder="PostCode / Zip" />
-                            </div>
-                            <a href="#" class="button button-3d nomargin button-black">Calcular</a>
+                            <a href="#" class="button button-3d nomargin button-black" onclick="calculateshipping()">Calcular</a>
 
                         </form>
                     </div>
@@ -141,8 +133,8 @@
                                     </td>
 
                                     <td class="cart-product-name">
-                                        <span class="amount">$120</span>
-                                        <input type="hidden" id="shipping" value="120">
+                                        <span class="shippingprice" id="shippingprice">$0</span>
+                                        <input type="hidden" id="shipping" value="0">
                                     </td>
                                 </tr>
                                 <tr class="cart_item">
@@ -185,6 +177,7 @@
 <!-- Footer Scripts
 ============================================= -->
 <script type="text/javascript" src="js/functions.js"></script>
+
 <script>
     var i = 0;
     var num = 0;
@@ -206,6 +199,17 @@
     var total = (shipping + subtotal)
 
     $('#total_total').html('$'+total)
+</script>
+<script>
+    function calculateshipping() {
+        $('#shippingprice').html('$150');
+        $('#shipping').val(150);
+        var shipping = parseInt($('#shipping').val())
+        var subtotal = parseInt($('#subtotal').val())
+        var total = (shipping + subtotal)
+
+        $('#total_total').html('$'+total)
+    }
 </script>
 </body>
 </html>

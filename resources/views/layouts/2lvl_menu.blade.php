@@ -28,118 +28,118 @@
                         </a>
 
                     </li>
-{{--                    <!-- Mega Menu--}}
-{{--                    ============================================= -->--}}
-{{--                    <li><a href="#">--}}
-{{--                            <div>Joyería</div>--}}
-{{--                        </a>--}}
-{{--                        <div class="mega-menu-content style-2 clearfix">--}}
-{{--                            <ul class="mega-menu-column col-md-6">--}}
-{{--                                <li class="mega-menu-title"><a href="#">--}}
-{{--                                        <div>Bisuteria</div>--}}
-{{--                                    </a>--}}
-{{--                                    <ul>--}}
-{{--                                        <li><a href="#">--}}
-{{--                                                <div>Collares</div>--}}
-{{--                                            </a></li>--}}
-{{--                                        --}}{{--                                        <li><a href="#">--}}
-{{--                                        --}}{{--                                                <div>Anillos</div>--}}
-{{--                                        --}}{{--                                            </a></li>--}}
-{{--                                        <li><a href="#">--}}
-{{--                                                <div>Pulseras</div>--}}
-{{--                                            </a></li>--}}
-{{--                                        --}}{{--                                        <li><a href="#">--}}
-{{--                                        --}}{{--                                                <div>Zarcillos</div>--}}
-{{--                                        --}}{{--                                            </a></li>--}}
-{{--                                        --}}{{--                                        <li><a href="#">--}}
-{{--                                        --}}{{--                                                <div>Tobilleras</div>--}}
-{{--                                        --}}{{--                                            </a></li>--}}
-{{--                                        --}}{{--                                        <li><a href="#">--}}
-{{--                                        --}}{{--                                                <div>Piercings</div>--}}
-{{--                                        --}}{{--                                            </a></li>--}}
-{{--                                    </ul>--}}
-{{--                                </li>--}}
-{{--                            </ul>--}}
-{{--                            <ul class="mega-menu-column col-md-6">--}}
-{{--                                <li class="mega-menu-title"><a href="#">--}}
-{{--                                        <div>Plata Ley 925</div>--}}
-{{--                                    </a>--}}
-{{--                                    <ul>--}}
-{{--                                        --}}{{--                                        <li><a href="#">--}}
-{{--                                        --}}{{--                                                <div>Collares</div>--}}
-{{--                                        --}}{{--                                            </a></li>--}}
-{{--                                        --}}{{--                                        <li><a href="#">--}}
-{{--                                        --}}{{--                                                <div>Anillos</div>--}}
-{{--                                        --}}{{--                                            </a></li>--}}
-{{--                                        <li><a href="#">--}}
-{{--                                                <div>Pulseras</div>--}}
-{{--                                            </a></li>--}}
-{{--                                        --}}{{--                                        <li><a href="#">--}}
-{{--                                        --}}{{--                                                <div>Zarcillos</div>--}}
-{{--                                        --}}{{--                                            </a></li>--}}
-{{--                                        --}}{{--                                        <li><a href="#">--}}
-{{--                                        --}}{{--                                                <div>Tobilleras</div>--}}
-{{--                                        --}}{{--                                            </a></li>--}}
-{{--                                        --}}{{--                                        <li><a href="#">--}}
-{{--                                        --}}{{--                                                <div>Piercings</div>--}}
-{{--                                        --}}{{--                                            </a></li>--}}
-{{--                                    </ul>--}}
-{{--                                </li>--}}
-{{--                            </ul>--}}
-{{--                        </div>--}}
-{{--                    </li><!-- .mega-menu end -->--}}
-{{--                    <li><a href="#">--}}
-{{--                            <div>Ropa</div>--}}
-{{--                            <span>Out of the Box</span></a>--}}
-{{--                        <div class="mega-menu-content style-2 clearfix">--}}
-{{--                            <ul class="mega-menu-column col-md-6">--}}
-{{--                                <li class="mega-menu-title"><a href="#">--}}
-{{--                                        <div>Salsa Lau</div>--}}
-{{--                                    </a>--}}
-{{--                                    <ul>--}}
-{{--                                        <li><a href="#">--}}
-{{--                                                <div>Playeras/Franelas</div>--}}
-{{--                                            </a></li>--}}
-{{--                                        <li><a href="#">--}}
-{{--                                                <div>Chamarras/Sudaderas</div>--}}
-{{--                                            </a></li>--}}
-{{--                                        --}}{{--                                        <li><a href="#">--}}
-{{--                                        --}}{{--                                                <div>Gorras</div>--}}
-{{--                                        --}}{{--                                            </a></li>--}}
-{{--                                        --}}{{--                                        <li><a href="#">--}}
-{{--                                        --}}{{--                                                <div>Viceras</div>--}}
-{{--                                        --}}{{--                                            </a></li>--}}
-{{--                                        --}}{{--                                        <li><a href="#">--}}
-{{--                                        --}}{{--                                                <div>Blusas</div>--}}
-{{--                                        --}}{{--                                            </a></li>--}}
-{{--                                    </ul>--}}
-{{--                                </li>--}}
-{{--                            </ul>--}}
-{{--                            --}}{{--                            <ul class="mega-menu-column col-md-6">--}}
-{{--                            --}}{{--                                <li class="mega-menu-title"><a href="#">--}}
-{{--                            --}}{{--                                        <div>Ropa</div>--}}
-{{--                            --}}{{--                                    </a>--}}
-{{--                            --}}{{--                                    <ul>--}}
-{{--                            --}}{{--                                        <li><a href="#">--}}
-{{--                            --}}{{--                                                <div>Hombres</div>--}}
-{{--                            --}}{{--                                            </a></li>--}}
-{{--                            --}}{{--                                        <li><a href="#">--}}
-{{--                            --}}{{--                                                <div>Mujeres</div>--}}
-{{--                            --}}{{--                                            </a></li>--}}
-{{--                            --}}{{--                                        <li><a href="#">--}}
-{{--                            --}}{{--                                                <div>Jovenes</div>--}}
-{{--                            --}}{{--                                            </a></li>--}}
-{{--                            --}}{{--                                        <li><a href="#">--}}
-{{--                            --}}{{--                                                <div>Niñas</div>--}}
-{{--                            --}}{{--                                            </a></li>--}}
-{{--                            --}}{{--                                        <li><a href="#">--}}
-{{--                            --}}{{--                                                <div>Niños</div>--}}
-{{--                            --}}{{--                                            </a></li>--}}
-{{--                            --}}{{--                                    </ul>--}}
-{{--                            --}}{{--                                </li>--}}
-{{--                            --}}{{--                            </ul>--}}
-{{--                        </div>--}}
-{{--                    </li><!-- .mega-menu end -->--}}
+                    {{--                    <!-- Mega Menu--}}
+                    {{--                    ============================================= -->--}}
+                    {{--                    <li><a href="#">--}}
+                    {{--                            <div>Joyería</div>--}}
+                    {{--                        </a>--}}
+                    {{--                        <div class="mega-menu-content style-2 clearfix">--}}
+                    {{--                            <ul class="mega-menu-column col-md-6">--}}
+                    {{--                                <li class="mega-menu-title"><a href="#">--}}
+                    {{--                                        <div>Bisuteria</div>--}}
+                    {{--                                    </a>--}}
+                    {{--                                    <ul>--}}
+                    {{--                                        <li><a href="#">--}}
+                    {{--                                                <div>Collares</div>--}}
+                    {{--                                            </a></li>--}}
+                    {{--                                        --}}{{--                                        <li><a href="#">--}}
+                    {{--                                        --}}{{--                                                <div>Anillos</div>--}}
+                    {{--                                        --}}{{--                                            </a></li>--}}
+                    {{--                                        <li><a href="#">--}}
+                    {{--                                                <div>Pulseras</div>--}}
+                    {{--                                            </a></li>--}}
+                    {{--                                        --}}{{--                                        <li><a href="#">--}}
+                    {{--                                        --}}{{--                                                <div>Zarcillos</div>--}}
+                    {{--                                        --}}{{--                                            </a></li>--}}
+                    {{--                                        --}}{{--                                        <li><a href="#">--}}
+                    {{--                                        --}}{{--                                                <div>Tobilleras</div>--}}
+                    {{--                                        --}}{{--                                            </a></li>--}}
+                    {{--                                        --}}{{--                                        <li><a href="#">--}}
+                    {{--                                        --}}{{--                                                <div>Piercings</div>--}}
+                    {{--                                        --}}{{--                                            </a></li>--}}
+                    {{--                                    </ul>--}}
+                    {{--                                </li>--}}
+                    {{--                            </ul>--}}
+                    {{--                            <ul class="mega-menu-column col-md-6">--}}
+                    {{--                                <li class="mega-menu-title"><a href="#">--}}
+                    {{--                                        <div>Plata Ley 925</div>--}}
+                    {{--                                    </a>--}}
+                    {{--                                    <ul>--}}
+                    {{--                                        --}}{{--                                        <li><a href="#">--}}
+                    {{--                                        --}}{{--                                                <div>Collares</div>--}}
+                    {{--                                        --}}{{--                                            </a></li>--}}
+                    {{--                                        --}}{{--                                        <li><a href="#">--}}
+                    {{--                                        --}}{{--                                                <div>Anillos</div>--}}
+                    {{--                                        --}}{{--                                            </a></li>--}}
+                    {{--                                        <li><a href="#">--}}
+                    {{--                                                <div>Pulseras</div>--}}
+                    {{--                                            </a></li>--}}
+                    {{--                                        --}}{{--                                        <li><a href="#">--}}
+                    {{--                                        --}}{{--                                                <div>Zarcillos</div>--}}
+                    {{--                                        --}}{{--                                            </a></li>--}}
+                    {{--                                        --}}{{--                                        <li><a href="#">--}}
+                    {{--                                        --}}{{--                                                <div>Tobilleras</div>--}}
+                    {{--                                        --}}{{--                                            </a></li>--}}
+                    {{--                                        --}}{{--                                        <li><a href="#">--}}
+                    {{--                                        --}}{{--                                                <div>Piercings</div>--}}
+                    {{--                                        --}}{{--                                            </a></li>--}}
+                    {{--                                    </ul>--}}
+                    {{--                                </li>--}}
+                    {{--                            </ul>--}}
+                    {{--                        </div>--}}
+                    {{--                    </li><!-- .mega-menu end -->--}}
+                    {{--                    <li><a href="#">--}}
+                    {{--                            <div>Ropa</div>--}}
+                    {{--                            <span>Out of the Box</span></a>--}}
+                    {{--                        <div class="mega-menu-content style-2 clearfix">--}}
+                    {{--                            <ul class="mega-menu-column col-md-6">--}}
+                    {{--                                <li class="mega-menu-title"><a href="#">--}}
+                    {{--                                        <div>Salsa Lau</div>--}}
+                    {{--                                    </a>--}}
+                    {{--                                    <ul>--}}
+                    {{--                                        <li><a href="#">--}}
+                    {{--                                                <div>Playeras/Franelas</div>--}}
+                    {{--                                            </a></li>--}}
+                    {{--                                        <li><a href="#">--}}
+                    {{--                                                <div>Chamarras/Sudaderas</div>--}}
+                    {{--                                            </a></li>--}}
+                    {{--                                        --}}{{--                                        <li><a href="#">--}}
+                    {{--                                        --}}{{--                                                <div>Gorras</div>--}}
+                    {{--                                        --}}{{--                                            </a></li>--}}
+                    {{--                                        --}}{{--                                        <li><a href="#">--}}
+                    {{--                                        --}}{{--                                                <div>Viceras</div>--}}
+                    {{--                                        --}}{{--                                            </a></li>--}}
+                    {{--                                        --}}{{--                                        <li><a href="#">--}}
+                    {{--                                        --}}{{--                                                <div>Blusas</div>--}}
+                    {{--                                        --}}{{--                                            </a></li>--}}
+                    {{--                                    </ul>--}}
+                    {{--                                </li>--}}
+                    {{--                            </ul>--}}
+                    {{--                            --}}{{--                            <ul class="mega-menu-column col-md-6">--}}
+                    {{--                            --}}{{--                                <li class="mega-menu-title"><a href="#">--}}
+                    {{--                            --}}{{--                                        <div>Ropa</div>--}}
+                    {{--                            --}}{{--                                    </a>--}}
+                    {{--                            --}}{{--                                    <ul>--}}
+                    {{--                            --}}{{--                                        <li><a href="#">--}}
+                    {{--                            --}}{{--                                                <div>Hombres</div>--}}
+                    {{--                            --}}{{--                                            </a></li>--}}
+                    {{--                            --}}{{--                                        <li><a href="#">--}}
+                    {{--                            --}}{{--                                                <div>Mujeres</div>--}}
+                    {{--                            --}}{{--                                            </a></li>--}}
+                    {{--                            --}}{{--                                        <li><a href="#">--}}
+                    {{--                            --}}{{--                                                <div>Jovenes</div>--}}
+                    {{--                            --}}{{--                                            </a></li>--}}
+                    {{--                            --}}{{--                                        <li><a href="#">--}}
+                    {{--                            --}}{{--                                                <div>Niñas</div>--}}
+                    {{--                            --}}{{--                                            </a></li>--}}
+                    {{--                            --}}{{--                                        <li><a href="#">--}}
+                    {{--                            --}}{{--                                                <div>Niños</div>--}}
+                    {{--                            --}}{{--                                            </a></li>--}}
+                    {{--                            --}}{{--                                    </ul>--}}
+                    {{--                            --}}{{--                                </li>--}}
+                    {{--                            --}}{{--                            </ul>--}}
+                    {{--                        </div>--}}
+                    {{--                    </li><!-- .mega-menu end -->--}}
                     <li><a href="{{ url('main/shop') }}">
                             <div>Tienda</div>
                             <span>Artículos Increibles</span></a></li>
@@ -161,7 +161,7 @@
                                     {{ Auth::user()->name }}
                                 </div>
                                 <span>Get In Touch</span></a></li>
-                    @if(Auth::user()->id == 1)
+                        @if(Auth::user()->id == 1)
                             <li><a href="{{ url('admin') }}">
                                     <div>
                                         Admin
@@ -184,7 +184,14 @@
                 <!-- Top Cart
                 ============================================= -->
                 <div id="top-cart">
-                    <a href="#" id="top-cart-trigger"><i class="icon-shopping-cart"></i><span>0</span></a>
+                    <a href="#" id="top-cart-trigger"><i class="icon-shopping-cart"></i><span style="font-size: 12px !important;">
+                            @if(empty(MyCart::myCart()))
+                                0
+                            @else
+                                {{ count(MyCart::myCart()) }}
+                            @endif
+
+                        </span></a>
                     <div class="top-cart-content">
                         <div class="top-cart-title">
                             <h4>Carrito de Compra</h4>
@@ -220,13 +227,7 @@
 
                 <!-- Top Search
                 ============================================= -->
-                <div id="top-search">
-                    <a href="#" id="top-search-trigger"><i class="icon-search3"></i><i class="icon-line-cross"></i></a>
-                    <form action="search.html" method="get">
-                        <input type="text" name="q" class="form-control" value=""
-                               placeholder="Escribe lo que deseas comprar...">
-                    </form>
-                </div><!-- #top-search end -->
+
 
             </nav><!-- #primary-menu end -->
 
